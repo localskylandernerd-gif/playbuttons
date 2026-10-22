@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "paybuttons",
+  "version": "${version}",
+  "name": "Pay Buttons",
+  "description": "Adds clickable 1x / 2x / 3x buttons next to received /pay messages.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.example.paybuttons.PayButtonsClient"]
+  },
+  "mixins": [
+    { "config": "paybuttons.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
